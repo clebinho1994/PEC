@@ -5,68 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PEC</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/img/logo-pec.png" type="image/x-icon">
 </head>
 <body>
   <main class="container">
-    <nav class="menu">
+    <nav class="menu line-menu">
+      <div class="img" id="#inicio">
+          <a href="#inicio"><img src="./assets/img/logo-pec.png" alt="logo" ></a>
+      </div>
+      
       <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#cursos">Cursos</a></li>
-        <li><a href="#cadastro">Pré-Cadastro</a></li>
+        <li><a href="#sobre">SOBRE</a></li>
+        <li><a href="#cursos">CURSOS</a></li>
+        <li><a href="#galeria">GALERIA</a></li>
+        <li><a href="#cadastro">PRÉ-CADASTRO</a></li>
       </ul>
     </nav>
+    <h1>PROJETO EDUCACIONAL CRESCER</h1>
 
-    <section class="sobre" id="sobre">
-      <h2>Sobre o PEC - Projeto Educacional Crescer</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus ea quis excepturi ab soluta, officiis atque? Quisquam omnis asperiores ipsum. Expedita aut iure incidunt aperiam id odio possimus ea.</p>
+    <section class="sobre line" id="sobre">
+      <h2>SOBRE O PEC </h2>
+      <div class="historia">
+        <div class="p1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium deserunt nihil qui ipsam harum ullam ratione? Cumque, commodi aliquid? Ipsum recusandae amet nihil labore pariatur voluptatum voluptate repellendus debitis distinctio soluta nesciunt consectetur accusantium cupiditate adipisci quibusdam a, reiciendis laborum cumque eius illum dolore impedit. Illum cum iure eos esse!
+          </p>
+        </div>
+
+        <div class="p1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium deserunt nihil qui ipsam harum ullam ratione? Cumque, commodi aliquid? Ipsum recusandae amet nihil labore pariatur voluptatum voluptate repellendus debitis distinctio soluta nesciunt consectetur accusantium cupiditate adipisci quibusdam a, reiciendis laborum cumque eius illum dolore impedit. Illum cum iure eos esse!
+          </p>
+        </div >
+
+      </div>
 
 
     </section>
 
-    <section class="cursos" id="cursos">
+    <section class="cursos line" id="cursos">
       <h2>Cursos PEC</h2>
 
       <ul>
-        <li>Informática</li>
-        <li>Inglês</li>
-        <li>Artesanato</li>
-        <li>Música</li>
-        <li>Alfabetização</li>
-        <li>Barbeiro</li>
+        <li><strong>Informática</strong> - Todas as Quartas às 19h</li>
+        <li><strong>Inglês</strong> - Todas as Quartas às 19h</li>
+        <li><strong>Artesanato</strong> - Todos os Sábados às 08h</li>
+        <li><strong>Música</strong> - Todos os Sábados às 08h</li>
+        <li><strong>Alfabetização</strong> - Todos os Sábados às 08h</li>
+        <li><strong>Barbeiro</strong> - Todos os Sábados às 08h</li>
       </ul>
 
     </section>
 
+    <section class="galeria line">
 
-    <section class="cadastro" id="cadastro">
-      <form action="cadastro">
+      <h2>GALERIA</h2>
 
-        <label for="Nome">Nome:</label>
-        <input type="text" placeholder="Digite seu nome completo">
-        <label for="Email">E-mail:</label>
-        <input type="email" name="" id="">
-        <label for="telefone">Telefone:</label>
-        <input type="number" placeholder="Digite seu numero ">
-        <label for="cursoDesejado">Selecione um curso:</label>
+      <div class="galeria-grid">
 
-        <select name="curso" id="curso">
-          <option value="InformáticaInglês">Informática</option>
-          <option value="Inglês">Inglês</option>
-          <option value="Artesanato">Artesanato</option>
-          <option value="Música">Música</option>
-          <option value="Alfabetização">Alfabetização</option>
-          <option value="Barbeiro">Barbeiro</option>
-        </select>
-        <button type="submit">Enviar</button>
+        <img src="./assets/img/carrossel/carrosel1.jpg" alt="Foto 1">
+        <img src="./assets/img/carrossel/carrossel2.jpg" alt="Foto 2">
+        <img src="./assets/img/carrossel/carrossel3.jpg" alt="Foto 3">
+        <img src="./assets/img/carrossel/carrossel4.jpg" alt="Foto 4">
 
-      </form>
+      </div>
+      
     </section>
 
-    <footer class="rodapé">
 
-      <p>Cleber Gomes&copy; - Todos os Direitos Reservados.</p>
+    <section class="cadastro line" id="cadastro">
 
+      <h2>FORMULÁRIO PARA PRÉ-CADASTRO</h2>
+
+        <div class="formulario">
+          <form action="cadastro">
+
+            <div class="form-1">
+              <label for="Nome">Nome:</label>
+              <input type="text" placeholder="Digite seu nome completo">
+              <label for="Email">E-mail:</label>
+              <input type="email" placeholder="E-mail">
+              <label for="telefone">Telefone:</label>
+              <input type="tel" placeholder="(21) 91234-5678" maxlength="15">
+            </div>
+
+            <div class="form-curso">
+              <h3>Selecione o curso desejado:</h3>
+
+              <select name="curso" id="curso">
+                <option value="InformáticaInglês">Informática</option>
+                <option value="Inglês">Inglês</option>
+                <option value="Artesanato">Artesanato</option>
+                <option value="Música">Música</option>
+                <option value="Alfabetização">Alfabetização</option>
+                <option value="Barbeiro">Barbeiro</option>
+              </select>
+              <button type="submit">Enviar</button>
+            </div>  
+
+          </form>
+        </div>
+        
+
+      
+    </section>
+
+    <footer class="rodape-contato ">
+      <div class="container-footer">
+        <div class="info-contato">
+          <h3>Contato</h3>
+          <p><strong>Endereço:</strong> Rua Alfredo Tomé Torres, 7 - Pau grande - Magé - RJ</p>
+          <p><strong>Telefone:</strong> (21)99451-8629</p>
+          <p><strong>Email:</strong> igrejabatistact@gmail.com</p>
+        </div>
+
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com/projetoeducacionalcrescer/" target="_blank">Instagram - Projeto Educacional Crescer</a>
+        </div>
+      </div>
+      <p class="copy">&copy; Cleber Gomes. Todos os direitos reservados.</p>
     </footer>
+
   </main>
   <script src="script.js"></script>
 </body>
